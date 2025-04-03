@@ -1,0 +1,542 @@
+/*ESTILOS PARA LA CABECERA Y CUERPO DE PAGINA*/
+:root{
+    --primary-color: rgb(183, 23, 100);
+    --secondary-color: white;
+    --shadow-color: 0 0 15px 5px rgba(183, 23, 100, 0.8);
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #07000b, #120115);
+    color: var(--secondary-color)
+}
+
+header {
+    background-color: #0e0016;
+    position: fixed;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+header a{
+    text-decoration: none;
+}
+
+h3 {
+    color: var(--primary-color);
+    margin: 0;
+    padding-left: 1rem; /* Ajuste para móvil */
+}
+
+/* Estilos del menú hamburguesa (oculto por defecto) */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 101;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: var(--primary-color);
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+/* Estilos del nav */
+nav {
+    padding-right: 2rem; /* Reemplaza el padding-left fijo */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Mantén los elementos en línea */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+    transform: scale(1.05);
+}
+
+/*ESTILOS PARA BOTONES*/
+#buttons {
+    display: flex;
+    gap: 40px; /* Espacio entre los botones */
+    justify-content: center; /* Centrar los botones */
+    margin-top: 40px;
+}
+
+
+.button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color:var(--primary-color);
+    color: var(--secondary-color);
+    text-decoration: none; /* Quitar el subrayado de los links */
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px; /* Bordes redondeados */
+    transition: background 0.3s, transform 0.2s;
+    border: 2px solid transparent;
+}
+
+
+.button:hover {
+    transform: scale(1.05); /* Efecto de agrandamiento */
+}
+
+/*ESTILOS PARA LAS SECCIONES*/
+
+section {
+    padding: 50px;
+}
+
+/*ESTILOS PARA LA SECCION ABOUT (SOBRE MI)*/
+
+#about{
+    padding-top: 100px;
+    text-align: center;
+}
+
+#about #nombre{
+    font-size: 64px;
+    color: var(--secondary-color);
+    margin-bottom: 0px;
+}
+
+#about #puesto{
+    font-size: 32px;
+}
+
+#about #nombre-color{
+    color: var(--primary-color);
+}
+
+#description{
+    color: whitesmoke;
+    margin-right: 20%;
+    margin-left: 20%;
+    font-size: 18px;
+    line-height: 1.5;
+    word-spacing: 2px;
+}
+
+
+strong p{
+    margin-top: 80px;
+    font-size: 48px;
+    text-align: center;
+}
+
+/*ESTILOS PARA LA SECCION DE SKILLS*/
+
+#skills {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-bottom: 100px;
+    gap: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#skills span {
+    display: flex;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+    align-items: center; /* Centra verticalmente el texto respecto al icono */
+}
+
+#skills span i {
+    color: var(--primary-color); /* Color del icono */
+    font-size: 24px; /* Tamaño del icono */
+    
+    background-color: rgba(231, 105, 166, 0.3); /* Color del círculo */
+    width: 60px; /* Tamaño del círculo */
+    height: 60px; /* Mantiene la forma circular */
+    
+    border-radius: 50%; /* 🔥 Hace que sea un círculo */
+    
+    display: flex; /* Habilita flexbox para centrar */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    
+    margin-right: 15px; /* Espacio entre el icono y el texto */
+}
+
+
+
+#fronted, #backend, #bbd, #languages {
+    background-color: rgb(35, 34, 35);
+    padding: 20px;
+    width: 600px;
+    min-height: 230px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    list-style-type: none;
+}
+
+#fronted:hover, #backend:hover, #bbd:hover, #languages:hover, #email:hover, #localizacion:hover, #telefono:hover, #cv:hover{
+    border: 2px solid rgba(183, 23, 100, 0.8);
+    box-shadow: var(--shadow-color);
+    scale: 1.05;
+}
+
+#fronted ul, #backend ul, #bbd ul, #languages ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear los items a la izquierda */
+    gap: 10px; 
+    list-style-type: none;
+}
+
+#fronted li, #backend li, #bbd li, #languages li {
+    color: var(--secondary-color);
+    position: relative; /* Necesario para colocar el pseudo-elemento */
+    padding-left: 20px; /* Espacio para el punto */
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+    width: 100%; /* Mantener los elementos dentro del contenedor */
+    text-align: left; /* Alinear el texto a la izquierda */
+}
+
+
+#skills li::before{
+    content: ''; /* Crea el pseudo-elemento */
+    position: absolute;
+    left: 0; /* Alinea el punto a la izquierda del texto */
+    top: 50%;
+    transform: translateY(-50%); /* Centra verticalmente */
+    width: 10px; /* Tamaño del punto */
+    height: 10px; /* Tamaño del punto */
+    border-radius: 50%; /* Lo hace redondo */
+    background-color: rgba(183, 23, 100, 0.8); /* Cambia este color al que desees */
+}
+
+/*ESTILOS PARA LA SECCION DE PROYECTOS*/
+#icons{
+    font-size: 36px;
+    text-align: center;
+    gap: 20px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: -60px;
+}
+
+/* Estilos para el enlace (el ícono está dentro de <a>) */
+#icons a {
+    padding: 10px;
+    color: var(--secondary-color);
+    transition: all 0.3s ease; /* Efecto suave al pasar el mouse */
+}
+
+a[href*="linkedin"]:hover i {
+    color: #004182;
+    scale: 1.05;
+}
+
+a[href*="github"]:hover i {
+    color: purple;
+    scale: 1.05;
+}
+
+#tarjetas{
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    justify-content: center;
+    background-color:  rgb(35, 34, 35);
+    box-shadow: var(--shadow-color);
+}
+
+#Weather-APP {
+    width: auto; 
+    height: auto;
+    overflow: hidden;  
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .carousel-container img {
+    width: 100%;
+    height: auto; /* Altura flexible */
+    object-fit: cover; /* Cubre el espacio manteniendo proporciones */
+    display: block;
+    transition: transform 0.5s ease; /* Para efectos de transición */
+  }
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+.carousel-btn:hover {
+    background-color: rgba(183, 23, 100, 0.8);
+}
+
+#Weather-APP strong p{
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 25px;
+}
+
+#Weather-APP p{
+    font-size: 18px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: -10px;
+    line-height: 1.5;
+    word-spacing: 2px;
+}
+
+#Weather-APP ul {
+    list-style: none;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+#Weather-APP ul li {
+    display: inline-block; 
+    padding: 10px 20px;  
+    background-color: rgba(231, 105, 166, 0.7); 
+    border-radius: 10px; 
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/*ESTILOS PARA CONTACTO*/
+#datosContacto{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+#email, #localizacion, #telefono, #cv{
+    background-color: rgb(35, 34, 35);
+    margin-top: 50px;
+    height: 100px;
+    width: 350px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+#email #tituloCorreo, #localizacion #Titubicacion, #telefono #Tittelefono, #cv #TitCV{
+    font-weight: bold;
+    padding-top: 20px;
+    font-size: 22px;
+}
+
+#email #gmail, #localizacion #ubicacion, #telefono #numeroTelefono, #cv #descargarCv{
+    margin-top: 10px;
+}
+
+#cv a{
+    color: var(--secondary-color);
+}
+
+#cv a:hover{
+    color: var(--primary-color);
+}
+
+#email i, #localizacion i, #telefono i, #cv i{
+    color: var(--primary-color);
+    padding-right: 15px;
+    padding-left: 1px;
+    font-weight: 20px;
+}
+
+
+/* Media Queries para responsive */
+@media (max-width: 768px){
+    /*CABECERA Y SECCION ABOUT*/
+
+    /* Muestra el botón hamburguesa */
+    .hamburger {
+        display: block;
+    }
+    
+    /* Oculta el nav por defecto en móvil */
+    nav {
+        position: fixed;
+        top: 0;
+        right: -100%; /* Menú fuera de pantalla */
+        width: 30%;
+        height: 100vh;
+        background-color: #0e0016;
+        padding: 2rem;
+        transition: right 0.3s ease;
+    }
+    
+    nav.active {
+        right: 0; /* Muestra el menú */
+    }
+    
+    nav ul {
+        flex-direction: column;
+        margin-top: 4rem;
+    }
+    
+    nav ul li {
+        margin: 1rem 0;
+    }
+
+    #description{
+        color: whitesmoke;
+        margin-right: 5%;
+        margin-left: 5%;
+        font-size: 16px;
+        line-height: 1.5;
+        word-spacing: 2px;
+    }
+
+    /*SECCION DE SKILLS*/
+    #skills {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 100px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #fronted, #backend, #bbd, #languages {
+        min-height: auto; /* Altura automática */
+        width: auto;
+    }
+
+    /*Estilos para los proyectos*/
+    #tarjetas{
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        justify-content: center;
+        background-color:  rgb(35, 34, 35);
+        box-shadow: var(--shadow-color);
+    }
+
+    #datosContacto {
+        flex-direction: column; /* Apila los elementos verticalmente */
+        gap: 20px;
+        align-items: center; /* Centra las cajas */
+        padding: 0 5%; /* Margen lateral para no pegarse a los bordes */
+    }
+
+    #email, #localizacion, #telefono, #cv {
+        width: 100%; /* Ocupa el ancho disponible */
+        max-width: 350px; /* Máximo igual al diseño original */
+        height: auto; /* Altura flexible */
+        padding: 20px 15px; /* Espaciado interno ajustado */
+        margin-top: 0; /* Elimina margen superior */
+        margin-bottom: 15px; /* Espacio entre cajas */
+    }
+
+    #email #tituloCorreo, 
+    #localizacion #Titubicacion, 
+    #telefono #Tittelefono, 
+    #cv #TitCV {
+        font-size: 18px; /* Tamaño de fuente reducido */
+        padding-top: 10px; /* Espaciado ajustado */
+    }
+
+    #email #gmail, 
+    #localizacion #ubicacion, 
+    #telefono #numeroTelefono, 
+    #cv #descargarCv {
+        margin-top: 8px; /* Espaciado reducido */
+        font-size: 14px; /* Texto más legible */
+    }
+
+    #email i, 
+    #localizacion i, 
+    #telefono i, 
+    #cv i {
+        padding-right: 10px; /* Espaciado de iconos ajustado */
+        font-size: 18px; /* Tamaño de iconos consistente */
+    }
+
+    #icons{
+        font-size: 36px;
+        text-align: center;
+        gap: 20px;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: -60px;
+        margin-bottom: 30px;
+    }
+      
+      .carousel-container img {
+        max-width: none; /* Elimina la restricción */
+        transform-origin: center; /* Zoom desde el centro */
+      }
+
+    /* Efecto hover más suave para móviles */
+    #cv a:hover {
+        transform: scale(1.02);
+        transition: transform 0.2s ease;
+    }
+    
+}
+
+
+
+

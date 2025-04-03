@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./estilos/styles.css">
+</head>
+<body>
+
+    <header>
+        <a href="#about"><h3>Sergio</h3></a>
+        
+        <!-- Botón del menú hamburguesa (solo visible en móvil) -->
+        <button class="hamburger" aria-label="Menú">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        
+        <!-- Menú de navegación -->
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <p id ="nombre">Hola, soy <span id ="nombre-color">Sergio Bolaños</span></p>
+        <strong><p id ="puesto">Ingeniero informático</p></strong>
+        <div id = "description">
+            <p>¡Hola! Soy Sergio, Ingeniero Informático apasionado por el desarrollo web. 
+                Actualmente trabajo en mantenimiento de software, pero busco dar el salto al desarrollo (Frontend, Backend o Fullstack) 
+                para crecer profesionalmente y aportar soluciones innovadoras</p>
+        </div>
+        <div id = "buttons">
+            <a href = "#projects" id= "projects-button" class = "button">Proyectos</a>
+            <a href = "#contact" id = "contact-button" class = "button">Contacto</a>
+        </div>
+    </section>
+
+    <strong><p>Mis Habilidades</p></strong>
+
+    <section id="skills">
+        <ul id = "fronted">
+            <span><i class="fas fa-laptop-code"></i>FRONTEND</span>
+            <li>HTML ⭐⭐⭐⭐</li>
+            <li>CSS ⭐⭐⭐⭐</li>
+            <li>JavaScript ⭐⭐⭐</li>
+        </ul>
+        <ul id = "backend">
+            <span><i class= "fas fa-cogs"></i>BACKEND</span>
+            <li>Node.js ⭐⭐</li>
+            <li>Express ⭐⭐</li>
+        </ul>
+        <ul id = "bbd">
+            <span><i class = "fas fa-database"></i>BBDD</span>
+            <li>MongoDB ⭐⭐</li>
+            <li>PostgreSQL ⭐⭐⭐</li>
+        </ul>
+        <ul id = "languages">
+            <span><i class="fas fa-code"></i>LENGUAJES</span>
+            <li>JavaScript ⭐⭐⭐</li>
+            <li>Java ⭐⭐</li>
+            <li>Python ⭐⭐</li>
+            <li>SQL ⭐⭐⭐</li>
+            <li>HTML/CSS ⭐⭐⭐⭐</li>
+        </ul>
+    </section>
+
+    <strong><p>Proyectos</p></strong>
+
+    <section id="projects">
+        <div id = "icons">
+            <a href = "https://github.com/sbd1997?tab=repositories"><i class = "fab fa-github"></i></a>
+        </div>
+        <div id = "tarjetas">
+            <div id = "Weather-APP">
+                <div class="carousel-container">
+                    <button id="prev" class="carousel-btn">&#10094;</button>
+                    <img id="carousel-image" src="img/login-nocturno.png" alt="Weather App">
+                    <button id="next" class="carousel-btn">&#10095;</button>
+                </div>
+                <strong><p>Weather-APP</p></strong>
+                <p>Weather-APP, es un pequeño proyecto personal que permite consultar el clima en cualquier parte del mundo,
+                    ademas el usuario, podrá establecer una ciudad como su favorita y tener en tiempo real las condiciones climáticas.
+                    en esa ubicación. Weather-APP, me ha permitido familiarizarme con la integracion de APIS, la gestion de usuarios
+                    (registro, validacion de datos, recuperacion de datos y modificación) y el envio y recepcion de datos por parte de cliente y servidor
+                </p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>  
+        </div>
+        
+    </section>
+
+    <strong><p>Contacto</p></strong>
+
+    <section id="contact">
+        <div id = "icons">
+            <a href = "https://www.linkedin.com/in/sergio-bola%C3%B1os-133211187/"><i class = "fab fa-linkedin"></i></a>
+            <a href = "https://github.com/sbd1997?tab=repositories"><i class = "fab fa-github"></i></a>
+        </div>
+        <div id = "datosContacto">
+            <div id = "email">
+                <span id = "tituloCorreo"><i class = "fa fa-envelope"></i>Correo</span>
+                <span id = "gmail">sergiobolanos1997@gmail.com</span>
+            </div>
+            <div id = "localizacion">
+                <span id = "Titubicacion"><i class = "fa fa-map-marker"></i>Ubicación</span>
+                <span id = "ubicacion">Madrid, España</span>
+            </div>
+            <div id = "telefono">
+                <span id = "Tittelefono"><i class = "fa fa-phone"></i>Telefono</span>
+                <span id = "numeroTelefono">661524147</span>
+            </div>
+            <div id = "cv">
+                <span id = "TitCV"><i class="fas fa-file-pdf"></i>Curriculum</span>
+                <span id = "descargarCv"><a href="./pdfs/curriculum.pdf" download="CV_Sergio_Bolaños.pdf">Descargar</span>
+            </div>
+        </div>
+    </section>
+
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/carruselScript.js"></script>
+</body>
+</html>
