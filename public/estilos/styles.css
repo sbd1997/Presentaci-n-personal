@@ -3,6 +3,10 @@
     --primary-color: rgb(183, 23, 100);
     --secondary-color: white;
     --shadow-color: 0 0 15px 5px rgba(183, 23, 100, 0.8);
+    --header-color: #0e0016;
+    --text-color: whitesmoke;
+    --tech-icons-color: rgba(231, 105, 166, 0.3);
+    --tech-cards-color: rgb(35, 34, 35);
 }
 
 
@@ -11,11 +15,11 @@ body {
     margin: 0;
     padding: 0;
     background: linear-gradient(135deg, #07000b, #120115);
-    color: var(--secondary-color)
+    color: var(--secondary-color);
 }
 
 header {
-    background-color: #0e0016;
+    background-color: var(--header-color);
     position: fixed;
     width: 100%;
     padding: 1rem;
@@ -135,7 +139,7 @@ section {
 }
 
 #description{
-    color: whitesmoke;
+    color: var(--text-color);
     margin-right: 20%;
     margin-left: 20%;
     font-size: 18px;
@@ -171,26 +175,22 @@ strong p{
 }
 
 #skills span i {
-    color: var(--primary-color); /* Color del icono */
-    font-size: 24px; /* Tamaño del icono */
-    
-    background-color: rgba(231, 105, 166, 0.3); /* Color del círculo */
-    width: 60px; /* Tamaño del círculo */
-    height: 60px; /* Mantiene la forma circular */
-    
-    border-radius: 50%; /* 🔥 Hace que sea un círculo */
-    
-    display: flex; /* Habilita flexbox para centrar */
-    align-items: center; /* Centrar verticalmente */
-    justify-content: center; /* Centrar horizontalmente */
-    
-    margin-right: 15px; /* Espacio entre el icono y el texto */
+    color: var(--primary-color); 
+    font-size: 24px; 
+    background-color: var(--tech-icons-color); 
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; 
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    margin-right: 15px; 
 }
 
 
 
 #fronted, #backend, #bbd, #languages {
-    background-color: rgb(35, 34, 35);
+    background-color: var(--tech-cards-color);
     padding: 20px;
     width: 600px;
     min-height: 230px;
@@ -202,7 +202,7 @@ strong p{
 }
 
 #fronted:hover, #backend:hover, #bbd:hover, #languages:hover, #email:hover, #localizacion:hover, #telefono:hover, #cv:hover{
-    border: 2px solid rgba(183, 23, 100, 0.8);
+    border: 2px solid var(--shadow-color);
     box-shadow: var(--shadow-color);
     scale: 1.05;
 }
@@ -239,7 +239,7 @@ strong p{
     width: 10px; /* Tamaño del punto */
     height: 10px; /* Tamaño del punto */
     border-radius: 50%; /* Lo hace redondo */
-    background-color: rgba(183, 23, 100, 0.8); /* Cambia este color al que desees */
+    background-color: var(--shadow-color); 
 }
 
 /*ESTILOS PARA LA SECCION DE PROYECTOS*/
@@ -274,7 +274,7 @@ a[href*="github"]:hover i {
     margin-left: 20%;
     margin-right: 20%;
     justify-content: center;
-    background-color:  rgb(35, 34, 35);
+    background-color:  var(--tech-cards-color);
     box-shadow: var(--shadow-color);
 }
 
@@ -308,7 +308,7 @@ a[href*="github"]:hover i {
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5);
-    color: white;
+    color: var(--secondary-color);
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -330,7 +330,7 @@ a[href*="github"]:hover i {
 }
 
 .carousel-btn:hover {
-    background-color: rgba(183, 23, 100, 0.8);
+    background-color: var(--shadow-color);
 }
 
 #Weather-APP strong p{
@@ -370,7 +370,7 @@ a[href*="github"]:hover i {
     gap: 30px;
 }
 #email, #localizacion, #telefono, #cv{
-    background-color: rgb(35, 34, 35);
+    background-color: var(--tech-cards-color);
     margin-top: 50px;
     height: 100px;
     width: 350px;
@@ -422,7 +422,7 @@ a[href*="github"]:hover i {
         right: -100%; /* Menú fuera de pantalla */
         width: 30%;
         height: 100vh;
-        background-color: #0e0016;
+        background-color: var(--header-color);
         padding: 2rem;
         transition: right 0.3s ease;
     }
@@ -441,7 +441,7 @@ a[href*="github"]:hover i {
     }
 
     #description{
-        color: whitesmoke;
+        color: var(--text-color);
         margin-right: 5%;
         margin-left: 5%;
         font-size: 16px;
@@ -475,19 +475,19 @@ a[href*="github"]:hover i {
     }
 
     #datosContacto {
-        flex-direction: column; /* Apila los elementos verticalmente */
+        flex-direction: column; 
         gap: 20px;
-        align-items: center; /* Centra las cajas */
-        padding: 0 5%; /* Margen lateral para no pegarse a los bordes */
+        align-items: center; 
+        padding: 0 5%; 
     }
 
     #email, #localizacion, #telefono, #cv {
-        width: 100%; /* Ocupa el ancho disponible */
-        max-width: 350px; /* Máximo igual al diseño original */
-        height: auto; /* Altura flexible */
-        padding: 20px 15px; /* Espaciado interno ajustado */
-        margin-top: 0; /* Elimina margen superior */
-        margin-bottom: 15px; /* Espacio entre cajas */
+        width: 100%; 
+        max-width: 350px; 
+        height: auto; 
+        padding: 20px 15px; 
+        margin-top: 0; 
+        margin-bottom: 15px; 
     }
 
     #email #tituloCorreo, 
