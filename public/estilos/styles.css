@@ -3,7 +3,7 @@
     --primary-color: #307bd0;           /* Azul principal */
     --secondary-color: #f0f8ff;         /* Azul claro casi blanco */
     --shadow-color: 0 0 15px 5px rgba(50, 125, 187, 0.5); /* Sombra azul suave */
-    --header-color: #0a1a30;            /* Azul oscuro para el header */
+    --header-color: #0c203a;            /* Azul oscuro para el header */
     --text-color: #e6f0ff;              /* Azul muy claro para texto */
     --tech-icons-color: rgba(100, 149, 237, 0.3); /* Azul acero transparente */
     --tech-cards-color: #1a2a4a;        /* Azul noche para tarjetas */
@@ -39,7 +39,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #07000b, #120115);
+    background: linear-gradient(135deg, #0a1625, #14213d);
     color: var(--secondary-color);
 }
 
