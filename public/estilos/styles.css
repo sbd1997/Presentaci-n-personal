@@ -1,8 +1,8 @@
 /*ESTILOS PARA LA CABECERA Y CUERPO DE PAGINA*/
 :root{
-    --primary-color: #307bd0;           /* Azul principal */
+    --primary-color: #67a5ed;           /* Azul principal */
     --secondary-color: #f0f8ff;         /* Azul claro casi blanco */
-    --shadow-color: 0 0 15px 5px rgba(50, 125, 187, 0.5); /* Sombra azul suave */
+    --shadow-color: 0 0 15px 5px rgba(84, 153, 210, 0.5); /* Sombra azul suave */
     --header-color: #0c203a;            /* Azul oscuro para el header */
     --text-color: #e6f0ff;              /* Azul muy claro para texto */
     --tech-icons-color: rgba(100, 149, 237, 0.3); /* Azul acero transparente */
@@ -102,6 +102,9 @@ header a{
 }
 
 h3 {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500; 
+    letter-spacing: 1px;
     color: var(--primary-color);
     margin: 0;
     padding-left: 1rem; /* Ajuste para móvil */
@@ -138,6 +141,9 @@ nav ul {
 }
 
 nav ul li {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
     margin: 0 15px;
 }
 
@@ -154,6 +160,7 @@ nav a:hover {
 
 /*ESTILOS PARA BOTONES*/
 #buttons {
+    font-family: 'Rajdhani', sans-serif;
     display: flex;
     gap: 40px; /* Espacio entre los botones */
     justify-content: center; /* Centrar los botones */
@@ -167,7 +174,7 @@ nav a:hover {
     background-color:var(--primary-color);
     color: var(--secondary-color);
     text-decoration: none; /* Quitar el subrayado de los links */
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
     border-radius: 8px; /* Bordes redondeados */
     transition: background 0.3s, transform 0.2s;
@@ -190,12 +197,15 @@ section {
 #about{
     padding-top: 100px;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 #about #nombre{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500; 
+    letter-spacing: 1px; 
     font-size: 64px;
     color: var(--secondary-color);
-    margin-bottom: 0px;
 }
 
 #about #puesto{
@@ -207,6 +217,7 @@ section {
 }
 
 #description{
+    font-family: 'Rajdhani', sans-serif;
     color: var(--text-color);
     margin-right: 20%;
     margin-left: 20%;
@@ -217,7 +228,10 @@ section {
 
 
 strong p{
-    margin-top: 80px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500; 
+    letter-spacing: 1px;
+    margin-top: 50px;
     font-size: 48px;
     text-align: center;
 }
@@ -230,11 +244,13 @@ strong p{
     text-align: center;
     margin-bottom: 100px;
     gap: 30px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #skills span {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 1px;
     display: flex;
     font-weight: bold;
     font-size: 18px;
@@ -284,17 +300,19 @@ strong p{
 }
 
 #fronted li, #backend li, #bbd li, #languages li {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
     color: var(--secondary-color);
-    position: relative; /* Necesario para colocar el pseudo-elemento */
-    padding-left: 20px; /* Espacio para el punto */
+    position: relative; 
+    padding-left: 20px; 
     margin-left: 10px;
     margin-top: 20px;
     margin-bottom: 10px;
     border-radius: 5px;
     font-weight: bold;
     transition: transform 0.3s ease;
-    width: 100%; /* Mantener los elementos dentro del contenedor */
-    text-align: left; /* Alinear el texto a la izquierda */
+    width: 100%; 
+    text-align: left; 
 }
 
 
@@ -353,6 +371,12 @@ a[href*="github"]:hover i {
     display: flex;  
     flex-direction: column;
     align-items: center;
+}
+
+#projects p{
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 500; 
+    letter-spacing: 1px;
 }
 
 .carousel-container {
@@ -423,6 +447,9 @@ a[href*="github"]:hover i {
 }
 
 #Weather-APP ul li {
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
     display: inline-block; 
     padding: 10px 20px;  
     background-color: var(--tech-icons-color); 
@@ -449,12 +476,15 @@ a[href*="github"]:hover i {
 }
 
 #email #tituloCorreo, #localizacion #Titubicacion, #telefono #Tittelefono, #cv #TitCV{
+    font-family: 'Orbitron', sans-serif;
     font-weight: bold;
     padding-top: 20px;
     font-size: 22px;
 }
 
 #email #gmail, #localizacion #ubicacion, #telefono #numeroTelefono, #cv #descargarCv{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
     margin-top: 10px;
 }
 
