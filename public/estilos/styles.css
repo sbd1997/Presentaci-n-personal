@@ -184,6 +184,7 @@ nav a:hover {
 
 .button:hover {
     transform: scale(1.05); /* Efecto de agrandamiento */
+    box-shadow: var(--shadow-color);
 }
 
 /*ESTILOS PARA LAS SECCIONES*/
@@ -221,7 +222,7 @@ section {
     color: var(--text-color);
     margin-right: 20%;
     margin-left: 20%;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
     word-spacing: 2px;
 }
@@ -423,6 +424,10 @@ a[href*="github"]:hover i {
 
 .carousel-btn:hover {
     background-color: var(--shadow-color);
+}
+
+#tarjetas p + p {
+    margin-top: 1.1rem;
 }
 
 #Weather-APP strong p{
