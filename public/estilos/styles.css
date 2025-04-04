@@ -12,6 +12,12 @@
 }
 
 /*Estilos para el scroll*/
+
+html {
+    scroll-behavior: smooth; 
+  }
+
+
 ::-webkit-scrollbar {
     width: 10px;       /* Ancho del scroll vertical */
     height: 10px;      /* Altura del scroll horizontal */
