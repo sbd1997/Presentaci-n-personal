@@ -7,7 +7,32 @@
     --text-color: whitesmoke;
     --tech-icons-color: rgba(231, 105, 166, 0.3);
     --tech-cards-color: rgb(35, 34, 35);
+    --scroll-color: #307bd0;
+    --scroll-background-color: #2e4ab3;
 }
+
+/*Estilos para el scroll*/
+::-webkit-scrollbar {
+    width: 10px;       /* Ancho del scroll vertical */
+    height: 10px;      /* Altura del scroll horizontal */
+  }
+  
+  /* Fondo de la barra de scroll */
+  ::-webkit-scrollbar-track {
+    background: var(--secondary-color);  /* Color de fondo */
+    border-radius: 5px;   /* Bordes redondeados */
+  }
+  
+  /* Barra del scroll (la que se mueve) */
+  ::-webkit-scrollbar-thumb {
+    background: var(--scroll-color);     /* Color principal */
+    border-radius: 5px;   /* Bordes redondeados */
+  }
+  
+  /* Cambia el color al pasar el mouse */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--scroll-background-color);     /* Color oscuro al hacer hover */
+  }
 
 
 body {
@@ -461,7 +486,7 @@ a[href*="github"]:hover i {
 
     #fronted, #backend, #bbd, #languages {
         min-height: auto; /* Altura automática */
-        width: auto;
+        width: auto; 
     }
 
     /*Estilos para los proyectos*/
