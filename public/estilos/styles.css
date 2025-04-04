@@ -1,14 +1,14 @@
 /*ESTILOS PARA LA CABECERA Y CUERPO DE PAGINA*/
 :root{
-    --primary-color: rgb(183, 23, 100);
-    --secondary-color: white;
-    --shadow-color: 0 0 15px 5px rgba(183, 23, 100, 0.8);
-    --header-color: #0e0016;
-    --text-color: whitesmoke;
-    --tech-icons-color: rgba(231, 105, 166, 0.3);
-    --tech-cards-color: rgb(35, 34, 35);
-    --scroll-color: #307bd0;
-    --scroll-background-color: #2e4ab3;
+    --primary-color: #307bd0;           /* Azul principal */
+    --secondary-color: #f0f8ff;         /* Azul claro casi blanco */
+    --shadow-color: 0 0 15px 5px rgba(50, 125, 187, 0.5); /* Sombra azul suave */
+    --header-color: #0a1a30;            /* Azul oscuro para el header */
+    --text-color: #e6f0ff;              /* Azul muy claro para texto */
+    --tech-icons-color: rgba(100, 149, 237, 0.3); /* Azul acero transparente */
+    --tech-cards-color: #1a2a4a;        /* Azul noche para tarjetas */
+    --scroll-color: #4a90e2;            /* Azul brillante para scroll */
+    --scroll-background-color: #1e3a8a;  /* Azul marino para hover */
 }
 
 /*Estilos para el scroll*/
@@ -264,7 +264,7 @@ strong p{
     width: 10px; /* Tamaño del punto */
     height: 10px; /* Tamaño del punto */
     border-radius: 50%; /* Lo hace redondo */
-    background-color: var(--shadow-color); 
+    background-color: var(--secondary-color); 
 }
 
 /*ESTILOS PARA LA SECCION DE PROYECTOS*/
@@ -382,7 +382,7 @@ a[href*="github"]:hover i {
 #Weather-APP ul li {
     display: inline-block; 
     padding: 10px 20px;  
-    background-color: rgba(231, 105, 166, 0.7); 
+    background-color: var(--tech-icons-color); 
     border-radius: 10px; 
     margin-right: 20px;
     margin-bottom: 20px;
