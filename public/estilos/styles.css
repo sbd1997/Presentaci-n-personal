@@ -4,7 +4,7 @@
     --secondary-color: #f0f8ff;         /* Azul claro casi blanco */
     --shadow-color: 0 0 15px 5px rgba(84, 153, 210, 0.5); /* Sombra azul suave */
     --header-color: #0c203a;            /* Azul oscuro para el header */
-    --text-color: #e6f0ff;              /* Azul muy claro para texto */
+    --text-color: #f0f8ff;              /* Azul muy claro para texto */
     --tech-icons-color: rgba(100, 149, 237, 0.3); /* Azul acero transparente */
     --tech-cards-color: #1a2a4a;        /* Azul noche para tarjetas */
     --scroll-color: #4a90e2;            /* Azul brillante para scroll */
@@ -289,7 +289,7 @@ strong p{
 #fronted:hover, #backend:hover, #bbd:hover, #languages:hover, #email:hover, #localizacion:hover, #telefono:hover, #cv:hover{
     border: 2px solid var(--shadow-color);
     box-shadow: var(--shadow-color);
-    scale: 1.05;
+    transform: scale(1.03) translateY(-5px);
 }
 
 #fronted ul, #backend ul, #bbd ul, #languages ul {
