@@ -17,6 +17,43 @@ html {
     scroll-behavior: smooth; 
   }
 
+  #tech-particles-global {
+    position: fixed; /* Cubre toda la pantalla */
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    pointer-events: none; /* Permite interactuar con elementos debajo */
+    z-index: -1; /* Se queda detrás de todo */
+    overflow: hidden;
+  }
+  
+  .particle {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: rgba(100, 200, 255, 0.6); /* Azul claro */
+    border-radius: 50%;
+    box-shadow: 0 0 10px 3px rgba(100, 200, 255, 0.3);
+    animation: float 15s infinite ease-in-out;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(50px, -30px); }
+  }
+
+  /* Animaciones */
+  @keyframes scan {
+    0% { top: 0; }
+    100% { top: 100%; }
+  }
+  
+  @keyframes pulse {
+    0%, 100% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.3; }
+    50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.6; }
+  }
+
 
 ::-webkit-scrollbar {
     width: 10px;       /* Ancho del scroll vertical */

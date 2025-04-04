@@ -22,4 +22,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('tech-particles-global');
+    const particleCount = 50; // Ajusta según necesidad
+  
+    for (let i = 0; i < particleCount; i++) {
+      const particle = document.createElement('div');
+      particle.classList.add('particle');
+      particle.style.left = `${Math.random() * 100}vw`;
+      particle.style.top = `${Math.random() * 100}vh`;
+      particle.style.opacity = Math.random() * 0.6 + 0.2;
+      particle.style.animationDelay = `${Math.random() * 20}s`;
+      particle.style.animationDuration = `${Math.random() * 15 + 10}s`;
+      container.appendChild(particle);
+    }
+  });
+
 
