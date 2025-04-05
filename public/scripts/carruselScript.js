@@ -1,8 +1,8 @@
 const images = [
-    "./img/login-nocturno.png", "./img/login.png", 
-    "./img/principal-nocturno.png", "./img/principal.png",
-    "./img/perfil-nocturno.png", "./img/perfil.png", 
-    "./img/historial.png", "./img/historial-nocturno.png"
+    "./img/login-nocturno.webp", "./img/login.webp", 
+    "./img/principal-nocturno.webp", "./img/principal.webp",
+    "./img/perfil-nocturno.webp", "./img/perfil.webp", 
+    "./img/historial.webp", "./img/historial-nocturno.webp"
 ];
 
 let index = 0;

@@ -358,8 +358,8 @@ a[href*="github"]:hover i {
 
 #tarjetas{
     margin-top: 5%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
     justify-content: center;
     background-color:  var(--tech-cards-color);
     box-shadow: var(--shadow-color);
