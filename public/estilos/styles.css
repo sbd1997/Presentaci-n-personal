@@ -493,11 +493,11 @@ a[href*="github"]:hover i {
     margin-top: 10px;
 }
 
-#cv a{
+#cv a, #email a{
     color: var(--secondary-color);
 }
 
-#cv a:hover{
+#cv a:hover, #email a:hover{
     color: var(--primary-color);
 }
 
