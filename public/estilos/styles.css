@@ -237,6 +237,34 @@ strong p{
     text-align: center;
 }
 
+/* Estado inicial oculto + ligera traslación */
+#description p {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+/* Estado visible */
+#description p.reveal-in {
+  opacity: 1;
+  transform: none;
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+
+/* Escalonado (stagger) por párrafo */
+#description p:nth-child(1).reveal-in { transition-delay: 0ms; }
+#description p:nth-child(2).reveal-in { transition-delay: 300ms; }
+#description p:nth-child(3).reveal-in { transition-delay: 450ms; }
+
+/* Accesibilidad: si el usuario prefiere menos animaciones */
+@media (prefers-reduced-motion: reduce) {
+  #description p,
+  #description p.reveal-in {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}
+
 /*ESTILOS PARA LA SECCION DE SKILLS*/
 
 #skills {
