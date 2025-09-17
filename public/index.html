@@ -15,15 +15,15 @@
     <header>
         <a href="#about"><h3>Sergio</h3></a>
         
-        <!-- Botón del menú hamburguesa (solo visible en móvil) -->
-        <button class="hamburger" aria-label="Menú">
+        <!-- Botón del menú hamburguesa -->
+        <button class="hamburger" aria-label="Menú" aria-controls="main-nav" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
         </button>
         
         <!-- Menú de navegación -->
-        <nav>
+        <nav id="main-nav">
             <ul>
                 <li><a href="#about">Sobre mí</a></li>
                 <li><a href="#skills">Habilidades</a></li>
@@ -90,66 +90,64 @@
     <strong><p>Proyectos</p></strong>
 
     <section id="projects">
-    <div id="icons">
-        <a href="https://github.com/sbd1997?tab=repositories">
-            <i class="fab fa-github"></i>
-        </a>
-    </div>
-
-    <div id="tarjetas">
-        <div id="project-card">
-            <div class="carousel-container">
-                <button id="prev" class="carousel-btn">&#10094;</button>
-                <img id="carousel-image" src="img/login-nocturno.webp" alt="Proyecto" loading="lazy">
-                <button id="next" class="carousel-btn">&#10095;</button>
-            </div>
-
-            <strong><p id="project-title">Weather-APP</p></strong>
-            <p id="project-desc">
-                Weather-APP es un pequeño proyecto personal que permite consultar el clima en cualquier parte del mundo,
-                además, el usuario podrá establecer una ciudad como favorita y tener en tiempo real las condiciones climáticas
-                de esa ubicación.
-            </p>
-            <p id="project-extra">
-                Weather-APP me ha permitido familiarizarme con la integración de APIs, la gestión de usuarios
-                (registro, validación, recuperación y modificación de datos) y el envío/recepción de datos cliente-servidor.
-            </p>
-
-            <ul id="project-tech">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>MongoDB</li>
-            </ul>
+        <div id="icons">
+            <a href="https://github.com/sbd1997?tab=repositories">
+                <i class="fab fa-github"></i>
+            </a>
         </div>
-    </div>
-</section>
+
+        <div id="tarjetas">
+            <div id="project-card">
+                <div class="carousel-container">
+                    <button id="prev" class="carousel-btn" aria-label="Proyecto anterior">&#10094;</button>
+                    <img id="carousel-image" src="img/login-nocturno.webp" alt="Proyecto" loading="lazy">
+                    <button id="next" class="carousel-btn" aria-label="Proyecto siguiente">&#10095;</button>
+                </div>
+                <strong><p id="project-title">Weather-APP</p></strong>
+                <p id="project-desc">
+                    Weather-APP es un pequeño proyecto personal que permite consultar el clima en cualquier parte del mundo,
+                    además, el usuario podrá establecer una ciudad como favorita y tener en tiempo real las condiciones climáticas
+                    de esa ubicación.
+                </p>
+                <p id="project-extra">
+                    Weather-APP me ha permitido familiarizarme con la integración de APIs, la gestión de usuarios
+                    (registro, validación, recuperación y modificación de datos) y el envío/recepción de datos cliente-servidor.
+                </p>
+                <ul id="project-tech">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>  
+        </div>
+    </section>
 
     <strong><p>Contacto</p></strong>
 
     <section id="contact">
-        <div id = "icons">
-            <a href = "https://www.linkedin.com/in/sergio-bola%C3%B1os-133211187/"><i class = "fab fa-linkedin"></i></a>
-            <a href = "https://github.com/sbd1997?tab=repositories"><i class = "fab fa-github"></i></a>
+        <div id="icons">
+            <a href="https://www.linkedin.com/in/sergio-bola%C3%B1os-133211187/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/sbd1997?tab=repositories"><i class="fab fa-github"></i></a>
         </div>
-        <div id = "datosContacto">
-            <div id = "email">
-                <span id = "tituloCorreo"><i class = "fa fa-envelope"></i>Correo</span>
+        <div id="datosContacto">
+            <div id="email">
+                <span id="tituloCorreo"><i class="fa fa-envelope"></i>Correo</span>
                 <a href="mailto:sergiobolanos1997@gmail.com" id="gmail">sergiobolanos1997@gmail.com</a>
             </div>
-            <div id = "localizacion">
-                <span id = "Titubicacion"><i class = "fa fa-map-marker"></i>Ubicación</span>
-                <span id = "ubicacion">Madrid, España</span>
+            <div id="localizacion">
+                <span id="Titubicacion"><i class="fa fa-map-marker"></i>Ubicación</span>
+                <span id="ubicacion">Madrid, España</span>
             </div>
-            <div id = "telefono">
-                <span id = "Tittelefono"><i class = "fa fa-phone"></i>Telefono</span>
-                <span id = "numeroTelefono">661524147</span>
+            <div id="telefono">
+                <span id="Tittelefono"><i class="fa fa-phone"></i>Telefono</span>
+                <span id="numeroTelefono">661524147</span>
             </div>
-            <div id = "cv">
-                <span id = "TitCV"><i class="fas fa-file-pdf"></i>Curriculum</span>
-                <span id = "descargarCv"><a href="./pdfs/curriculum.pdf" download="CV_Sergio_Bolaños.pdf">Descargar</span>
+            <div id="cv">
+                <span id="TitCV"><i class="fas fa-file-pdf"></i>Curriculum</span>
+                <span id="descargarCv"><a href="./pdfs/curriculum.pdf" download="CV_Sergio_Bolaños.pdf">Descargar</a></span>
             </div>
         </div>
     </section>
