@@ -234,6 +234,7 @@ strong p{
     font-weight: 500; 
     letter-spacing: 1px;
     margin-top: 50px;
+    margin-bottom: 0px;
     font-size: 48px;
     text-align: center;
 }
@@ -606,7 +607,6 @@ a[href*="github"]:hover i{ color:purple; transform:scale(1.05); }
   .carousel-btn{ width: 36px; height: 36px; font-size: 18px; }
 }
 
-/*ESTILOS PARA CONTACTO*/
 /*ESTILOS PARA CONTACTO*/
 #datosContacto {
     display: flex;
