@@ -607,12 +607,14 @@ a[href*="github"]:hover i{ color:purple; transform:scale(1.05); }
 }
 
 /*ESTILOS PARA CONTACTO*/
-#datosContacto{
+/*ESTILOS PARA CONTACTO*/
+#datosContacto {
     display: flex;
     flex-direction: row;
     gap: 30px;
 }
-#email, #localizacion, #telefono, #cv{
+
+#email, #localizacion, #telefono, #cv {
     background-color: var(--tech-cards-color);
     margin-top: 50px;
     height: 100px;
@@ -620,31 +622,46 @@ a[href*="github"]:hover i{ color:purple; transform:scale(1.05); }
     text-align: center;
     display: flex;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 10px; /* un poco más redondeadas para que encajen con las demás */
+    transition: box-shadow 0.3s ease, transform 0.3s ease, border 0.3s ease, background 0.3s ease;
+    border: 2px solid transparent; /* 🔹 borde invisible inicial */
 }
 
-#email #tituloCorreo, #localizacion #Titubicacion, #telefono #Tittelefono, #cv #TitCV{
+/* Efecto hover igual que las demás tarjetas */
+#email:hover, #localizacion:hover, #telefono:hover, #cv:hover {
+    background: rgba(40, 60, 100, 0.95);             /* 🔹 fondo más claro */
+    border: 2px solid rgba(100, 149, 237, 0.8);      /* 🔹 borde azul claro */
+    box-shadow: 0 0 24px rgba(100, 149, 237, .35);   /* 🔹 glow azul */
+    transform: translateY(-5px) scale(1.03);         /* 🔹 efecto levantar y zoom */
+}
+
+/* Titulos */
+#email #tituloCorreo, #localizacion #Titubicacion, 
+#telefono #Tittelefono, #cv #TitCV {
     font-family: 'Orbitron', sans-serif;
     font-weight: bold;
     padding-top: 20px;
     font-size: 22px;
 }
 
-#email #gmail, #localizacion #ubicacion, #telefono #numeroTelefono, #cv #descargarCv{
+/* Textos */
+#email #gmail, #localizacion #ubicacion, 
+#telefono #numeroTelefono, #cv #descargarCv {
     font-family: 'Rajdhani', sans-serif;
     font-size: 18px;
     margin-top: 10px;
 }
 
-#cv a, #email a{
+/* Links */
+#cv a, #email a {
     color: var(--secondary-color);
 }
-
-#cv a:hover, #email a:hover{
+#cv a:hover, #email a:hover {
     color: var(--primary-color);
 }
 
-#email i, #localizacion i, #telefono i, #cv i{
+/* Iconos */
+#email i, #localizacion i, #telefono i, #cv i {
     color: var(--primary-color);
     padding-right: 15px;
     padding-left: 1px;
