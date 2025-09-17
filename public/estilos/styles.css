@@ -269,93 +269,102 @@ strong p{
 /*ESTILOS PARA LA SECCION DE SKILLS*/
 
 #skills {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 50px auto;
+    max-width: 1200px;
 }
 
+/* ====== Tarjetas ====== */
+#sistemas, #bases, #languages, #competencias {
+    background-color: var(--tech-cards-color);
+    padding: 25px 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;   /* todas tendrán misma altura */
+    list-style: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover con iluminación */
+#sistemas:hover, #bases:hover, #languages:hover, #competencias:hover {
+    border: 2px solid var(--primary-color);
+    background-color: rgba(100, 149, 237, 0.15); /* azul clarito translúcido */
+    box-shadow: 0 0 25px rgba(100, 149, 237, 0.6); /* 🔹 efecto glow azul */
+    transform: scale(1.04) translateY(-6px);
+}
+
+/* ====== Encabezado de tarjeta ====== */
 #skills span {
     font-family: 'Orbitron', sans-serif;
+    font-size: 20px;       /* título más grande */
+    font-weight: 800;
     letter-spacing: 1px;
+    color: var(--secondary-color);
     display: flex;
-    font-weight: bold;
-    font-size: 18px;
-    margin-bottom: 20px;
-    align-items: center; /* Centra verticalmente el texto respecto al icono */
+    flex-direction: column; /* Ícono arriba, texto abajo */
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 #skills span i {
-    color: var(--primary-color); 
-    font-size: 24px; 
-    background-color: var(--tech-icons-color); 
-    width: 60px; 
-    height: 60px; 
-    border-radius: 50%; 
-    display: flex; 
+    font-size: 32px;
+    color: var(--primary-color);
+    background-color: var(--tech-icons-color);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
     align-items: center;
-    justify-content: center; 
-    margin-right: 15px; 
+    justify-content: center;
+    margin-bottom: 12px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
-
-
-#fronted, #backend, #bbd, #languages {
-    background-color: var(--tech-cards-color);
-    padding: 20px;
-    width: 600px;
-    min-height: 230px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 20px;
-    list-style-type: none;
+/* Animación del icono */
+#sistemas:hover span i,
+#bases:hover span i,
+#languages:hover span i,
+#competencias:hover span i {
+    transform: scale(1.1);
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
-#fronted:hover, #backend:hover, #bbd:hover, #languages:hover, #email:hover, #localizacion:hover, #telefono:hover, #cv:hover{
-    border: 2px solid var(--shadow-color);
-    box-shadow: var(--shadow-color);
-    transform: scale(1.03) translateY(-5px);
-}
-
-#fronted ul, #backend ul, #bbd ul, #languages ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Alinear los items a la izquierda */
-    gap: 10px; 
-    list-style-type: none;
-}
-
-#fronted li, #backend li, #bbd li, #languages li {
+/* ====== Lista ====== */
+#skills li {
     font-family: 'Rajdhani', sans-serif;
-    font-size: 18px;
+    font-size: 18px;   /* más grande */
     color: var(--secondary-color);
-    position: relative; 
-    padding-left: 20px; 
-    margin-left: 10px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: transform 0.3s ease;
-    width: 100%; 
-    text-align: left; 
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    list-style: none;
 }
 
-
-#skills li::before{
-    content: ''; /* Crea el pseudo-elemento */
+#skills li::before {
+    content: '';
     position: absolute;
-    left: 0; /* Alinea el punto a la izquierda del texto */
+    left: 0;
     top: 50%;
-    transform: translateY(-50%); /* Centra verticalmente */
-    width: 10px; /* Tamaño del punto */
-    height: 10px; /* Tamaño del punto */
-    border-radius: 50%; /* Lo hace redondo */
-    background-color: var(--secondary-color); 
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+}
+
+/* ====== Responsive ====== */
+@media (max-width:1200px) {
+    #skills { grid-template-columns: repeat(2, minmax(260px, 1fr)); }
+}
+@media (max-width:640px) {
+    #skills { grid-template-columns: 1fr; }
+    #sistemas, #bases, #languages, #competencias { min-height: unset; }
 }
 
 /*ESTILOS PARA LA SECCION DE PROYECTOS*/
@@ -591,7 +600,7 @@ a[href*="github"]:hover i {
         margin-right: 10%;
     }
 
-    #fronted, #backend, #bbd, #languages {
+    #sistemas, #bases, #competencias, #languages {
         min-height: auto; /* Altura automática */
         width: auto; 
     }
