@@ -551,6 +551,19 @@ a[href*="github"]:hover i{ color:purple; transform:scale(1.05); }
   white-space: nowrap;
 }
 
+#project-desc,
+#project-extra {
+  font-size: 18px;
+  line-height: 1.5;   /* 🔹 menos altura de línea */
+  margin: 8px 0;      /* 🔹 reduce el espacio vertical */
+  max-width: 60ch;
+}
+
+/* Reduce la separación entre párrafos consecutivos */
+#tarjetas p + p {
+  margin-top: 0.6rem; /* antes era 1.1rem */
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 980px){
   #tarjetas{ 
