@@ -319,6 +319,12 @@ a[href*="github"]:hover i{ color:purple; transform:scale(1.05); }
 #email i, #localizacion i, #telefono i, #cv i{
   color:var(--primary-color); padding-right:15px; padding-left:1px; font-weight:20px;
 }
+/*reponsive monitor y pantallas grandes */
+@media (min-width:1200px){
+  #datosContacto{
+    justify-content:center;  /* centra horizontalmente */
+  }
+}
 
 /* Responsive contacto + mobile nav + about */
 @media (max-width:768px){
